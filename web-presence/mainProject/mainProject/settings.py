@@ -22,6 +22,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 's!875q(pseq5f_vs5zadoc64*(mi)afpfmq&&qtcu46vczdzz0'
 
+SOCIAL_AUTH_GITHUB_KEY = '17f8312363babcc2f9dc'
+SOCIAL_AUTH_GITHUB_SECRET = '549b08bbc9ef9dee89dabff0c16c7f0e9c8b9003'
+SOCIAL_AUTH_TWITTER_KEY = 'Kw8IQz1YB5ES13Jdr9gk0ssJf'
+SOCIAL_AUTH_TWITTER_SECRET = 'BiqZ98xQJ6D475gGwNCpAk97zt6vA6cOm30KnUQBI1Euv4xTnj'
+SOCIAL_AUTH_FACEBOOK_KEY = '106759483433119' 
+SOCIAL_AUTH_FACEBOOK_SECRET = '3b742077256a72b6106cb82d3cccb13a' 
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -130,9 +137,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static","static_root")
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "static","media_root")
+    
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static", "static_dirs"),
+    )
 
 ACCOUNT_ACTIVATION_DAYS = 0
 
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = '/' 
