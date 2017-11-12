@@ -1,6 +1,179 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Homepage</h2>
-  <p>Hello {{ user.username }}!</p>
+  	<div class="row">
+	  <div class="col-md-12 col-sm-12 col-xs-12">
+	    <div class="x_panel">
+	      
+	      <div class="x_content">
+	        <div class="col-md-3 col-sm-3 col-xs-12 profile_left">
+	        <center>
+	          <div class="profile_img">
+	            <div id="crop-avatar">
+	              <!-- Current avatar -->
+	              <img class="img-responsive avatar-view" src="static/images/img.jpg" alt="Avatar" title="Change the avatar">
+	            </div>
+	          </div>
+	          <br>
+	          <ul class="list-unstyled user_data">
+	            <li><i class="fa fa-map-marker user-profile-icon"></i> San Francisco, California, USA
+	            </li>
+
+	            <li>
+	              <i class="fa fa-briefcase user-profile-icon"></i> Software Engineer
+	            </li>
+
+	            <li class="m-top-xs">
+	              <i class="fa fa-external-link user-profile-icon"></i>
+	              <a href="http://www.kimlabs.com/profile/" target="_blank">www.kimlabs.com</a>
+	            </li>
+	          </ul>
+
+	          <a class="btn btn-success"> Resume </a>
+	          <br />
+
+	          
+	          </center>
+
+	        </div>
+	        <div class="col-md-9 col-sm-9 col-xs-12">
+                <div class="x_panel">
+                  
+                  <div class="x_content">
+
+                    <div class="col-xs-9">
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="home-r">
+                          <p class="lead">Hello, I am {{user.first_name}} {{user.last_name}}</p>
+                          <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
+                            synth. Cosby sweater eu banh mi, qui irure terr.</p>
+                        </div>
+                        <div class="tab-pane" id="profile-r">My Passion</div>
+                        <div class="tab-pane" id="messages-r">Achievements</div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <!-- required for floating -->
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs tabs-right">
+                        <li class="active"><a href="#home-r" data-toggle="tab">About Me</a>
+                        </li>
+                        <li><a href="#profile-r" data-toggle="tab">My Passion</a>
+                        </li>
+                        <li><a href="#messages-r" data-toggle="tab">Achievements</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-md-9 col-sm-9 col-xs-12">
+                <div class="x_panel">    
+                  <div class="x_content">
+                    <!-- start pop-over -->
+                    <center>
+	                    <a href="#"> <i class="fa fa-facebook fa-4x"></i></a>
+	                    <a href="#"> <i class="fa fa-twitter fa-4x"></i></a>
+	                    <a href="#"> <i class="fa fa-github fa-4x"></i></a>
+	                    <a href="#"> <i class="fa fa-google-plus fa-4x"></i></a>
+	                    <a href="#"> <i class="fa fa-linkedin fa-4x"></i></a>
+	                    <a href="#"> <i class="fa fa-stack-overflow fa-4x"></i></a>
+
+                    </center>
+                    <!-- end pop-over -->
+
+                  </div>
+                </div>
+              </div>
+
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-md-12 col-sm-12 col-xs-12">
+	  	<div class="x_panel">
+	  	<div class="col-md-4 col-sm-4 col-xs-12 profile_left">
+	        <div class="x_content">
+	  		<h4>Current Skills</h4>
+	          <ul class="list-unstyled user_data">
+	            <li>
+	              <p>Web Applications</p>
+	              <div class="progress progress_sm">
+	                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
+	              </div>
+	            </li>
+	            <li>
+	              <p>Website Design</p>
+	              <div class="progress progress_sm">
+	                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="70"></div>
+	              </div>
+	            </li>
+	            <li>
+	              <p>Automation & Testing</p>
+	              <div class="progress progress_sm">
+	                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="30"></div>
+	              </div>
+	            </li>
+	            <li>
+	              <p>UI / UX</p>
+	              <div class="progress progress_sm">
+	                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
+	              </div>
+	            </li>
+	          </ul>
+	          <!-- end of skills -->
+	  		</div>
+	  	</div>
+	  	<div class="col-md-4 col-sm-4 col-xs-12 profile_left">
+	        <div class="x_content">
+	  		<h4>Aspiring Skills</h4>
+	  		<i>
+	          <ul class="list-unstyled user_data">
+	            <li>
+	              <p>Web Applications</p>
+	              <div class="progress progress_sm">
+	                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
+	              </div>
+	            </li>
+	            <li>
+	              <p>Website Design</p>
+	              <div class="progress progress_sm">
+	                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="70"></div>
+	              </div>
+	            </li>
+	            <li>
+	              <p>Automation & Testing</p>
+	              <div class="progress progress_sm">
+	                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="30"></div>
+	              </div>
+	            </li>
+	            <li>
+	              <p>UI / UX</p>
+	              <div class="progress progress_sm">
+	                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
+	              </div>
+	            </li>
+	          </ul>
+	          <!-- end of skills -->
+	  		</div>
+	  	</div>
+	  	<div class="col-md-4 col-sm-4 col-xs-12 profile_left">
+	        <div class="x_content">
+	  		<a class="twitter-timeline" href="https://twitter.com/abhijitbangera" data-width="300"
+  data-height="300">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	  		</div>
+
+	  	</div>
+
+	  </div>
+	  </div>
+	</div>
+
 {% endblock %}

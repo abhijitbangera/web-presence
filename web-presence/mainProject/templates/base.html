@@ -46,7 +46,7 @@
             <div class="profile clearfix">
 
               <div class="profile_info">
-                <span>Welcome, {{user|title}}</span>
+                <span>Welcome {{user.first_name|title}}</span>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -58,10 +58,10 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a href="#"><i class="fa fa-home"></i> Dashboard </span></a>
+                  <li><a href="/"><i class="fa fa-home"></i> Home </span></a>
 
                   </li>
-                  <li><a href="#"><i class="fa fa-edit"></i> Register Member </a>
+                  <li><a href="/edit/"><i class="fa fa-edit"></i> Edit Profile </a>
                     
                   </li>
                   <li><a href="#"><i class="fa fa-desktop"></i> Plan Renew/Upgrade </a>
