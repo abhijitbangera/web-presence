@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="/social/" method="post">{% csrf_token %}
+  <div class="form-group">
+    <div class="col-md-7">
+      {{form.as_p}}
+	<input type="submit" value="submit">
+    </div>
+  </div>  
+</form> 
+{% endblock %}

@@ -61,8 +61,11 @@
                   <li><a href="/"><i class="fa fa-home"></i> Home </span></a>
 
                   </li>
-                  <li><a href="/edit/"><i class="fa fa-edit"></i> Edit Profile </a>
-                    
+                  <li><a><i class="fa fa-search"></i> Edit <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="{% url 'edit' %}">Basic Details</a></li>
+                      <li><a href="{% url 'social' %}">Social Details</a></li>
+                    </ul>
                   </li>
                   <li><a href="#"><i class="fa fa-desktop"></i> Plan Renew/Upgrade </a>
 

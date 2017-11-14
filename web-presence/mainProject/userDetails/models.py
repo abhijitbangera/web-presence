@@ -18,12 +18,12 @@ class memberDetails(models.Model):
 		return str(self.memberUserNumber)
 
 class memberSocialNetworks(models.Model):
-	facebook=models.CharField('Facebook',max_length=100)
-	twitter=models.CharField('Twitter',max_length=100)
-	linkedin=models.CharField('LinkedIn',max_length=100)
-	github=models.CharField('Github',max_length=100)
-	googleplus=	models.CharField('GooglePlus',max_length=100)
-	stackoverflow=models.CharField('Stackoverflow',max_length=100)
+	facebook=models.CharField('Facebook',max_length=100,blank=True)
+	twitter=models.CharField('Twitter',max_length=100,blank=True)
+	linkedin=models.CharField('LinkedIn',max_length=100,blank=True)
+	github=models.CharField('Github',max_length=100,blank=True)
+	googleplus=	models.CharField('GooglePlus',max_length=100,blank=True)
+	stackoverflow=models.CharField('Stackoverflow',max_length=100,blank=True)
 	memberUserNumber=models.ForeignKey(User, unique=True)
 
 	def __str__(self):
