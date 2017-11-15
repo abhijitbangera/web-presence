@@ -15,6 +15,8 @@
 	            </div>
 	          </div>
 	          <br>
+	          <p class="lead">{{user.first_name}} {{user.last_name}}</p>
+	          <br />
 	          <ul class="list-unstyled user_data">
 	            <li><i class="fa fa-map-marker user-profile-icon"></i> San Francisco, California, USA
 	            </li>
@@ -31,10 +33,6 @@
 
 	          <a class="btn btn-success"> Resume </a>
 	          <br />
-
-	          
-	          </center>
-
 	        </div>
 	        <div class="col-md-9 col-sm-9 col-xs-12">
                 <div class="x_panel">
@@ -45,7 +43,7 @@
                       <!-- Tab panes -->
                       <div class="tab-content">
                         <div class="tab-pane active" id="home-r">
-                          <p class="lead">Hello, I am {{user.first_name}} {{user.last_name}}</p>
+                          <p class="lead">About Me</p>
                           <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
                             synth. Cosby sweater eu banh mi, qui irure terr.</p>
                         </div>
@@ -132,6 +130,14 @@
 	  		</div>
 	  	</div>
 	  	<div class="col-md-4 col-sm-4 col-xs-12 profile_left">
+	        <center>
+				<div class="github-card" data-user="abhijitbangera" data-theme="medium"></div>
+				<script src="http://lab.lepture.com/github-cards/widget.js"></script> 
+	        </center>
+	    </div>
+
+
+	  	<div class="col-md-4 col-sm-4 col-xs-12 profile_left">
 	        <div class="x_content">
 	  		<h4>Aspiring Skills</h4>
 	  		<i>
@@ -164,16 +170,32 @@
 	          <!-- end of skills -->
 	  		</div>
 	  	</div>
-	  	<div class="col-md-4 col-sm-4 col-xs-12 profile_left">
-	        <div class="x_content">
-	  		<a class="twitter-timeline" href="https://twitter.com/abhijitbangera" data-width="300"
-  data-height="300">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-	  		</div>
 
-	  	</div>
+	  	
 
 	  </div>
 	  </div>
 	</div>
 
+
+
+	<!-- Third row -->
+	<div class="row">
+	  <div class="col-md-12 col-sm-12 col-xs-12">
+	  	<div class="x_panel">
+		  	<div class="col-md-4 col-sm-4 col-xs-12 profile_left">
+		        <div class="x_content">
+		  		<a class="twitter-timeline" href="https://twitter.com/googleindia" data-width="300"
+	  data-height="300">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		  		</div>			  
+		    </div>
+		    <div class="col-md-4 col-sm-4 col-xs-12 profile_left ">
+		        <div class="x_content">
+		  		<center><div class="github-card" data-user="abhijitbangera" data-theme="medium"></div></center>
+				<script src="http://lab.lepture.com/github-cards/widget.js"></script> 	
+		  		</div>			  
+		    </div>
+		</div>
+	</div>
+	
 {% endblock %}
