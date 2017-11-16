@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class memberDetails(models.Model):
+	memberURLUserName=models.CharField('User Name',max_length=15)
 	memberName=models.CharField('Full Name', max_length=100)
 	GENDER_CHOICES = (('M', 'Male'),('F', 'Female'),)
 	memberGender = models.CharField('Gender', max_length=1, choices=GENDER_CHOICES)
@@ -12,6 +13,9 @@ class memberDetails(models.Model):
 	memberEmail=models.EmailField('Email ID', max_length=100)
 	memberRegistrationDate=models.DateTimeField('Registration Date')
 	memberOccupation=models.CharField('Occupation',max_length=100)
+	memberdesc1=models.CharField('Description1',max_length=500)
+	memberdesc2=models.CharField('Description2',max_length=500)
+	memberdesc3=models.CharField('Description3',max_length=500)
 	memberUserNumber=models.ForeignKey(User, unique=True)
 
 	def __str__(self):

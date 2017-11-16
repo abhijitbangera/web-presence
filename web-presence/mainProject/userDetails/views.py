@@ -26,7 +26,6 @@ class member():
 				my_record = memberDetails.objects.get(memberUserNumber=request.user.id)
 				form = memberDetailsForm(instance=my_record)
 		elif request.POST:
-			print (request.POST)
 			user = get_user_model()
 			if form.is_valid():
 				print("valid")
